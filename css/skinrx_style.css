@@ -14,6 +14,10 @@
 #main {
 }
 #footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 5px solid #000;
 }
 
 /* container */
@@ -328,12 +332,13 @@ h1.logo a span {
   /* border: 1px solid #000;
   box-sizing: border-box; */
   text-align: center;
+  font-family: "Nunito Sans", sans-serif;
 }
 .pick .pick_img {
   padding: 15px 0;
 }
 .pick_icon {
-  width: 25px;
+  width: 30px;
   height: 16px;
   background: url(../img/icons.png) no-repeat 0 0;
   margin: 0 auto;
@@ -345,4 +350,98 @@ h1.logo a span {
 .icon04 {
   background-position: -150px 0;
 }
+
+/* magazine */
+.magazine {
+  margin-top: 50px;
+}
+
+/* brand_focus */
+.brand_focus {
+  margin-top: 50px;
+}
+.product_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* best_contents */
+.best_contents {
+  margin-top: 50px;
+}
+.best_inner {
+  display: flex;
+}
+.best_menu {
+  width: 176px;
+}
+.best_menu ul {
+}
+.best_menu ul li {
+}
+.best_menu ul li a {
+  display: block;
+  width: 176px;
+  height: 72px;
+}
+
+.best_menu ul li:nth-child(1) a {
+  background: url(../img/best_menu01.jpg);
+}
+.best_menu ul li:nth-child(1) a:hover {
+  background: url(../img/best_menu01_r.jpg);
+}
+.best_menu ul li:nth-child(2) a {
+  background: url(../img/best_menu02.jpg);
+}
+.best_menu ul li:nth-child(2) a:hover {
+  background: url(../img/best_menu02_r.jpg);
+}
+.best_menu ul li:nth-child(3) a {
+  background: url(../img/best_menu03.jpg);
+}
+.best_menu ul li:nth-child(3) a:hover {
+  background: url(../img/best_menu03_r.jpg);
+}
+.best_menu ul li:nth-child(4) a {
+  background: url(../img/best_menu04.jpg);
+}
+.best_menu ul li:nth-child(4) a:hover {
+  background: url(../img/best_menu04_r.jpg);
+}
+
+.best_iframe {
+  width: 768px;
+  height: 288px;
+}
+
+/* tab_box */
+.tab_box {
+  margin-top: 50px;
+}
+.seller_box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* footer */
+.contents01 {
+}
+.contents01 ul {
+}
+.contents01 ul li {
+}
+
+.contents02 {
+}
+.contents02 ul {
+}
+.contents02 ul li {
+}
+
+.contents03 {
+}
+.contents03 ul {
+}
+.contents03 ul li {
+}
