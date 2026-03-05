@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>skinRx</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/skinrx_style.css" />
+    <link rel="stylesheet" href="css/swipper.css" />
   </head>
   <body>
     <nav id="gnb">
@@ -67,24 +69,38 @@
       <div class="container">
         <section class="main_banner" aria-label="메인 프로모션 배너">
           <h2 class="ir_so">메인배너</h2>
-          <div class="rolling_banner">
-            <img src="img/main_roll01.png" alt="LOTUS이미지" />
-          </div>
-          <div class="feature_item">
-            <figcaption>feature item</figcaption>
-            <figure class="feature_img">
-              <a href="#"><img src="img/feature_item.png" alt="" /></a>
-            </figure>
-            <div class="item_txt">
-              <ul>
-                <li>Royal Apothic</li>
-                <li>로얄아포틱 홀랜드파크 핸드크림 로얄아포틱 홀랜드파크 핸드크림</li>
-                <li><span class="money">19,200</span><span class="cancle">23,750</span></li>
-              </ul>
+          <!-- swiper - sliding 만들기 -->
+          <div class="swiper rolling_banner1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/main_roll01.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/main_roll02.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/main_roll03.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/main_roll01.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/main_roll02.png" alt="" /></div>
+              <div class="swiper-slide"><img src="img/main_roll03.png" alt="" /></div>
             </div>
+            <!-- <img src="img/main_roll01.png" alt="LOTUS이미지" /> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="main_event">
-            <span class="ir_so">메인 이벤트</span>
+          <div class="event_inner">
+            <div class="feature_item">
+              <figcaption>feature item</figcaption>
+              <figure class="feature_img">
+                <a href="#"><img src="img/feature_item.png" alt="" /></a>
+              </figure>
+              <div class="item_txt">
+                <ul>
+                  <li>Royal Apothic</li>
+                  <li>로얄아포틱 홀랜드파크 핸드크림 로얄아포틱 홀랜드파크 핸드크림</li>
+                  <li><span class="money">19,200</span><span class="cancle">23,750</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="main_event">
+              <span class="ir_so">메인 이벤트</span>
+            </div>
           </div>
         </section>
         <!-- // main_banner -->
@@ -167,10 +183,17 @@
           <div class="title">
             <h2>BRAND FOCUS</h2>
           </div>
-          <div class="product_box">
-            <div class="product"><img src="img/brand_product01.png" alt="브랜드상품01" /></div>
-            <div class="product"><img src="img/brand_product02.png" alt="브랜드상품02" /></div>
-            <div class="product"><img src="img/brand_product03.png" alt="브랜드상품03" /></div>
+          <div class="swiper product_box">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/brand_product01.png" alt="브랜드상품01" /></div>
+              <div class="swiper-slide"><img src="img/brand_product02.png" alt="브랜드상품02" /></div>
+              <div class="swiper-slide"><img src="img/brand_product03.png" alt="브랜드상품03" /></div>
+              <div class="swiper-slide"><img src="img/brand_product01.png" alt="브랜드상품01" /></div>
+              <div class="swiper-slide"><img src="img/brand_product02.png" alt="브랜드상품02" /></div>
+              <div class="swiper-slide"><img src="img/brand_product03.png" alt="브랜드상품03" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </section>
         <!-- //brand_focus-->
@@ -188,10 +211,11 @@
                 <li><a href="html/sub04.html" class="ir_pm" target="menu">menu04</a></li>
               </ul>
             </div>
-            
+
             <div class="best_iframe">
               <iframe src="img/best_main00.jpg" frameborder="1" width="100%" height="100%" name="menu"></iframe>
-           </div>
+            </div>
+          </div>
         </section>
         <!-- //best_contents -->
 
@@ -200,9 +224,15 @@
             <h2>TOP SELLER</h2>
           </div>
           <ul class="seller_box">
-            <li><a href="#"><img src="img/tap_product01.png" alt=""></a></li>
-            <li><a href="#"><img src="img/tap_product02.png" alt=""></a></li>
-            <li><a href="#"><img src="img/tap_product03.png" alt=""></a></li>
+            <li>
+              <a href="#"><img src="img/tap_product01.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tap_product02.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tap_product03.png" alt="" /></a>
+            </li>
           </ul>
         </section>
       </div>
@@ -210,35 +240,69 @@
     <!-- //main -->
 
     <footer id="footer">
-      <div class="container">
+      <div class="container footer_inner">
         <div class="contents01">
-        <ul>
-          <li>고객센터</li>
-          <li>1566-1140</li>
-          <li>상담시간:오전 9시~오후6시(토,일공휴일휴무)</li>
-          <li>점심시간:정오12시~오후1시(상담불가)</li>
-        </ul>
+          <ul>
+            <li>고객센터</li>
+            <li>1566-1140</li>
+            <li>상담시간:오전 9시~오후6시(토,일공휴일휴무)</li>
+            <li>점심시간:정오12시~오후1시(상담불가)</li>
+          </ul>
+        </div>
+        <div class="contents02">
+          <ul>
+            <li>NEW & NOTICE</li>
+            <li>&#x2022;[공지] 카드사 무이자 할부 안내</li>
+            <li>&#x2022;[발표] '제주도 바캉스 지원 이벤트' 당첨자 안내</li>
+            <li>&#x2022;[발표] '센텔라' 뷰티테스터 당첨자 안내입니다.</li>
+          </ul>
+        </div>
+        <div class="contents03">
+          <ul class="outlet">
+            <li><span>OUTLET</span></li>
+            <li>Lowest priced ever</li>
+          </ul>
+          <ul class="outlet">
+            <li><span>FAN SKINRx</span></li>
+            <li>Brand supporters</li>
+          </ul>
+        </div>
       </div>
-      <div class="contents01">
-        <ul>
-          <li>NEW & NOTICE</li>
-          <li>&#x2022;[공지] 카드사 무이자 할부 안내</li>
-          <li>&#x2022;[발표] '제주도 바캉스 지원 이벤트' 당첨자 안내</li>
-          <li>&#x2022;[발표] '센텔라' 뷰티테스터 당첨자 안내입니다.</li>
-        </ul>
-      </div>
-      <div class="contents03">
-        <ul>
-          <li>OUTLET</li>
-          <li>Lowest priced ever</li>
-          <li>FAN SKINRx</li>
-          <li>Brand supporters</li>
-        </ul>
-      </div>
-
-      </div>
-      
     </footer>
     <!-- //footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".rolling_banner1", {
+        effect: "fade",
+
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+      var swiper = new Swiper(".product_box", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+    </script>
   </body>
 </html>
